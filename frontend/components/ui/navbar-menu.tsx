@@ -5,13 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 const transition = {
-  type: "spring",
+  type: "spring" as const,
   mass: 0.5,
-  damping: 11.5,
+  damping: 12,
   stiffness: 100,
   restDelta: 0.001,
   restSpeed: 0.001,
 };
+
 
 export const MenuItem = ({
   setActive,
