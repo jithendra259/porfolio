@@ -4,6 +4,7 @@ import { useState } from "react";
 import Chatbot from "./chatbot";
 import { HoveredLink, Menu,MenuItem, ProductItem  } from "@/components/ui/navbar-menu";
 import {cn} from "@/lib/utils";
+import { ProfileCard } from "@/components/profile-card";
 
 
 function Navbar({ className }: { className?: string }) {
@@ -68,15 +69,14 @@ export default function Home() {
   return (
     <div className="">
       <main className="">
-        <div>
+        <div >
           <div>
-            <Navbar className="top-2"/>
+            <Navbar />
           </div>
-
-          
-
-          <Chatbot/>
-          
+          <div>
+            <ProfileCard />
+            <Chatbot/>
+          </div>
         </div>
 
       </main>
